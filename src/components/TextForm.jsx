@@ -12,6 +12,12 @@ const handleLoClick = () => {
   setText(newText);
 };
 
+const handleReverseClick = () => {
+  //console.log("Upper case was clicked " + text);
+  let newText = text.split("").reverse().join("");
+  setText(newText);
+};
+
 
   const handleOnChange = (event) => {
     console.log("On change");
@@ -33,6 +39,7 @@ const handleLoClick = () => {
       </div>
       <button className="btn btn-primary mx-2" onClick={handleUpClick}>Convert to upper case</button>
       <button className="btn btn-primary mx-2" onClick={handleLoClick}>Convert to Lower case</button>
+      <button className="btn btn-primary mx-2" onClick={handleReverseClick}>Reverse text</button>
     </div>
     <div className= "container my-2">
     <h1>You text summary</h1>
