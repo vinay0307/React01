@@ -10,6 +10,7 @@ const handleLoClick = () => {
   //console.log("Upper case was clicked " + text);
   let newText = text.toLowerCase();
   setText(newText);
+  props.showAlert("Converted to lower case" , "Success")
 };
 
 const handleReverseClick = () => {
